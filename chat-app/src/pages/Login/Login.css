@@ -17,3 +17,21 @@
   gap: 20px;
   border-radius: 20px;
 }
+.login-form h2{
+  font-weight: 500 ;
+}
+.form-input{
+  padding: 8px 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  outline-color: #077EFF;
+}
+.Login-form button{
+  padding: 10px;
+  background-color: #077EFF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
