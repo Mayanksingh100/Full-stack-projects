@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 import './Login.css'
 import assets from '../../assets/assets'
+const Login = () => {
+     
+    const [currState,setCurrState] = useState("Sign up");
 
-function Login() {
   return (
     <div className='login'>
       
@@ -10,11 +13,11 @@ function Login() {
 
       <form className="login-form">
 
-        <h2>Sign Up</h2>
-        <input type="text" placeholder='username' classNam="form-input" required /> 
-        <input type="email" placeholder='Email Address' classNam="form-input" required />
+        <h2>{currState}</h2>
+       {currState === "Sign up" ?<input type="text" placeholder='username' className="form-input" required />:null } 
+        <input type="email" placeholder='Email Address' className="form-input" required />
         <input type="password" placeholder='Password' className="form-input"  required />
-        <button type='submit'>Sign Up</button>
+        <button type='submit' className='Login-form-button'>{currState === "Sign up"?"Create account": "Login now"}</button>
 
         <div className="login-term">
           <input type="checkbox" required />
@@ -22,8 +25,14 @@ function Login() {
         </div>
 
         <div className="login-forget">
-          <p className="login-toggle"> Already have an account <span>Click here</span>
-          </p>
+          {
+            currState === "Sign up"
+            ?<p className="login-toggle"> Already have an account <span onClick={()=>setCurrState("Login")}>Login here</span> </p>
+            :<p className="login-toggle"> Create an account <span onClick={()=>setCurrState("Sign up")}>Click here</span> </p>
+          
+
+          }
+         
         </div>
 
       </form>

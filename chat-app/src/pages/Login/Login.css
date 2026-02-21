@@ -26,12 +26,36 @@
   border-radius: 4px;
   outline-color: #077EFF;
 }
-.Login-form button{
-  padding: 10px;
+.login-form button{
   background-color: #077EFF;
-  color: white;
-  font-size: 16px;
-  border: none;
   border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
+}
+
+.login-term{
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+  color: #808080; 
+
+}
+.login-forget{
+  display: flex;
+  color: #808080;
+  gap: 5px;
+}
+.login-toggle{
+  font-size: 13px;
+  color: #5c5c5c;
+}
+.login-toggle span{
+  font-weight: 500;
+  color: #077EFF;
+  cursor: pointer;
+
 }
