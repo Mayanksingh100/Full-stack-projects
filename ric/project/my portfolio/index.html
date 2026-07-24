@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mayank kumar | An Aspiring Engineer</title>
+  <meta name="description" content="Fitness club template with a bold call-to-action hero. Responsive HTML, CSS, and JS." />
+  <link rel="stylesheet" href="./index.css">
+  </head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="brand" aria-label="portfolio home">
+        <div class="logo" aria-hidden="true">FC</div>
+        <span class="brand-name">Mayank SingH</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <svg width="28" height="28" viewBoxsss="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <div class="nav-links" id="desktopNav">
+        <a href="#programs">Programs</a>
+        <a href="#coaches">Coaches</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#cta">Join Now</a>
+      </div>
+    </nav>
+    <div id="mobileMenu" hidden>
+      <nav class="nav" aria-label="Mobile">
+        <div style="display:flex; gap:14px; flex-wrap:wrap; margin-left:auto">
+          <a href="#programs">Programs</a>
+          <a href="#coaches">Coaches</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+          <a class="btn" href="#cta">Join Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO with CTA -->
+    <section class="hero" id="cta">
+      <div>
+        <p class="kicker">Stronger Every Day</p>
+        <h1>Transform Your Body. <br/>Transform Your Life.</h1>
+        <p class="lead">High‑energy classes, expert coaches, and a community that keeps you accountable. Start your fitness journey today and see real results in weeks, not months.</p>
+        <div class="actions">
+          <a href="#pricing" class="btn" aria-label="Start your free trial">Start Free Trial</a>
+          <a href="#programs" class="btn btn-outline" aria-label="View programs">View Programs</a>
+        </div>
+        <div class="stats" aria-label="Quick stats">
+          <div class="stat"><b>2,500+</b><span>Active Members</span></div>
+          <div class="stat"><b>40+</b><span>Weekly Classes</span></div>
+          <div class="stat"><b>15</b><span>Certified Coaches</span></div>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Featured transformation">
+        <span class="badge">New: HIIT X Program</span>
+        <h2 class="sr-only">Featured Program</h2>
+        <div class="mock" role="img" aria-label="Abstract mockup of training app with neon accents"></div>
+        <p style="color:var(--muted); margin-top:14px">Burn fat fast with science‑backed intervals. Personalized progress tracking included.</p>
+        <a href="#pricing" class="btn" style="margin-top:8px">Join HIIT X</a>
+      </aside>
+    </section>
+
+    <!-- Programs -->
+    <section id="programs">
+      <h2 class="section-title">Programs that fit your pace</h2>
+      <div class="grid">
+        <article class="card" tabindex="0">
+          <h3>Strength & Conditioning</h3>
+          <p>Build muscle and power with progressive overload and pro coaching.</p>
+        </article>
+        <article class="card" tabindex="0">
+          <h3>HIIT & Cardio</h3>
+          <p>Maximize calorie burn in minimal time with coach‑led intervals.</p>
+        </article>
+        <article class="card" tabindex="0">
+          <h3>Mobility & Recovery</h3>
+          <p>Reduce soreness, move better, and prevent injuries with guided flows.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Coaches -->
+    <section id="coaches">
+      <h2 class="section-title">Meet the coaches</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Ayesha K.</h3>
+          <p>CSCS • Strength specialist | 8+ yrs coaching.</p>
+        </article>
+        <article class="card">
+          <h3>Rahul S.</h3>
+          <p>Cross‑training & conditioning | Performance focus.</p>
+        </article>
+        <article class="card">
+          <h3>Maria L.</h3>
+          <p>Mobility & recovery | Pain‑free movement advocate.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+      <h2 class="section-title">Simple, transparent pricing</h2>
+      <div class="pricing">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p class="price">₹999<span style="font-size:.9rem; color:var(--muted)">/mo</span></p>
+          <ul class="list">
+            <li>8 classes / month</li>
+            <li>Open gym access</li>
+            <li>Coach check‑in (monthly)</li>
+          </ul>
+          <a href="#contact" class="btn">Choose Starter</a>
+        </article>
+
+        <article class="price-card" style="background:linear-gradient(180deg, rgba(54,193,255,.12), rgba(255,255,255,.02)); border-color: rgba(54,193,255,.35)">
+          <h3>Pro</h3>
+          <p class="price">₹1,999<span style="font-size:.9rem; color:var(--muted)">/mo</span></p>
+          <ul class="list">
+            <li>Unlimited classes</li>
+            <li>Open gym + sauna</li>
+            <li>Weekly coach check‑in</li>
+          </ul>
+          <a href="#contact" class="btn" style="--p:var(--brand-2)">Choose Pro</a>
+        </article>
+
+        <article class="price-card">
+          <h3>Elite</h3>
+          <p class="price">₹3,499<span style="font-size:.9rem; color:var(--muted)">/mo</span></p>
+          <ul class="list">
+            <li>All Pro benefits</li>
+            <li>1:1 coaching (bi‑weekly)</li>
+            <li>Custom nutrition plan</li>
+          </ul>
+          <a href="#contact" class="btn">Choose Elite</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Lead capture / Contact -->
+    <section id="contact">
+      <h2 class="section-title">Start your free trial</h2>
+      <p style="color:var(--muted); max-width:70ch">Pop your email in below. We’ll send class schedules and a 7‑day pass. No spam, ever.</p>
+      <form class="lead-form" id="leadForm" novalidate>
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        <button class="btn" type="submit">Send My Pass</button>
+      </form>
+      <p id="formMsg" role="status" aria-live="polite" style="margin-top:10px"></p>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <p>© <span id="year"></span> Fitness Club. All rights reserved.</p>
+    </section>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => {
+      const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!expanded));
+      mobileMenu.hidden = expanded;
+    });
+
+    // Sticky header elevation on scroll
+    const header = document.querySelector('.site-header');
+    const elevate = () => {
+      if (window.scrollY > 4) header.style.boxShadow = 'var(--shadow)'; else header.style.boxShadow = 'none';
+    };
+    elevate();
+    window.addEventListener('scroll', elevate, { passive: true });
+
+    // Smooth scroll for on-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        if (!id || id === '#') return;
+        const el = document.querySelector(id);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.pushState(null, '', id);
+      });
+    });
+
+    // Lead form simple validation
+    const form = document.getElementById('leadForm');
+    const email = document.getElementById('email');
+    const msg = document.getElementById('formMsg');
+    form?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const value = email.value.trim();
+      const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+      if (!ok){
+        msg.textContent = 'Please enter a valid email address.';
+        msg.style.color = 'var(--danger)';
+        email.focus();
+        return;
+      }
+      msg.textContent = 'Thanks! Your 7‑day pass is on its way.';
+      msg.style.color = 'var(--brand)';
+      form.reset();
+    });
+
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Animate in cards on view
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach((en)=>{
+        if (en.isIntersecting){
+          en.target.animate([
+            { opacity:0, transform:'translateY(10px)' },
+            { opacity:1, transform:'translateY(0)' }
+          ], { duration:500, easing:'cubic-bezier(.2,.7,.2,1)', fill:'both' });
+          io.unobserve(en.target);
+        }
+      })
+    }, { threshold:.15 });
+    document.querySelectorAll('.card, .price-card, .hero-card, .stat').forEach(el=> io.observe(el));
+  </script>
+</body>
+</html>
