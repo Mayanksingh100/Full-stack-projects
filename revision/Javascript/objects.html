@@ -21,7 +21,7 @@
         delete product.newProperty;
         console.log(product);
 
-*/
+
 
         const product2= {
             name : 'shirt',
@@ -44,6 +44,36 @@
         console.log(JSON.stringify(product2));
         const jsonString = JSON.stringify(product2);
         console.log(JSON.parse(jsonString));
+        */
+
+
+        console.log('hello',length);
+      //  console.log('hello', toUpperCase());
+        const object1 = {
+            message: 'hello',
+            price : 998
+        };
+
+     //   const message = object1.message;
+        const {message,price} = object1;
+        console.log(message);
+        console.log(price); 
+        
+        const objects = {
+            message,
+          //  method : function function1() {
+           //   console.log('method');   }
+            method(){
+                console.log('method');
+            }
+        };
+        console.log(objects);
+        object.method();
+
+
+
+
+
      </script>
 </body>
 </html>
