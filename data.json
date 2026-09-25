@@ -1,0 +1,12 @@
+{
+  "application": 
+    {
+      "id": 1,
+      "name": "full-stack-projects",
+      "company": "google",
+      "role": "SWE",
+      "status": "applied",
+      "appliedDate": "2026-06-01"
+    }
+  
+}
